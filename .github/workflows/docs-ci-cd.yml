@@ -30,6 +30,6 @@ jobs:
       - uses: actions/checkout@v3
       - name: deploy website contents
         run: |
-          git add _site
+          git add -f _site
           git commit -a -m "updating GH-PAGES"
           git push --force-with-lease origin HEAD:gh-pages
